@@ -60,8 +60,7 @@ export class BaresService {
       ),
     ];
     this.arrCerveza = [
-      new Cervez1(),
-      a('Embotellada'),
+      new Cerveza(1, 'Embotellada'),
       new Cerveza(2, 'Barril'),
       new Cerveza(3, 'Embotellada'),
       new Cerveza(4, 'Barril'),
