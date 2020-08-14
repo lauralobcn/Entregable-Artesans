@@ -1,15 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Local } from '../../models/local.model';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: 'app-buscador-cerveceria',
+  templateUrl: './buscador-cerveceria.component.html',
+  styleUrls: ['./buscador-cerveceria.component.css'],
 })
-export class AppComponent {
+export class BuscadorCerveceriaComponent implements OnInit {
+  local: Local[];
   constructor(private router: Router) {}
 
+  ngOnInit(): void {}
+
   recogerTipoCerveza($event): void {
+    // console.log($event.target.value);
     this.router.navigate(['/blog', $event.target.value]);
   }
   recogerProcedenciaCerveza($event): void {

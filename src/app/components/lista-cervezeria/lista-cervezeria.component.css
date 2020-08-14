@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: auto;
+}
+
+img {
+  width: 200px;
+  height: 210px;
+}

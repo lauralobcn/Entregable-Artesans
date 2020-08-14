@@ -1,0 +1,29 @@
+<br>
+<div class="container">
+  <section class="row mt-5">
+    <h1 class="col-12 text-center display-3">Cervecerías Artesanales</h1>
+    <p class="col-6 text-justify">¿Cansado de las mismas <strong class="text-info">cervezas comerciales
+      </strong>eudulcloradas e insulsas? ¿Necesitas un guía
+      especializado en tu ciudad dónde solo te recomiende los <strong class="text-info">mejores locales</strong>?
+      ¿Estas con mono de <strong class="text-info">Pub Crawl</strong> sin tener que
+      irte a Belgica? </p>
+    <p class="col-6 text-justify">Bienvenido al <strong class="text-info">santuario de los amantes de la
+        cerveza</strong>!
+      Somos tu buscador
+      de cervecerías
+      con producto artesanal y de importación para que dejes de sufrir buscando el sabor a tus pintas.</p>
+  </section>
+
+  <section class="row mt-5 mb-6 mb-2">
+    <div class="card col-3 card pt-3 pl-4 pb-3 " *ngFor="let local of arrLocales">
+      <img class="card-img-top" [src]="local.imagen">
+      <div class="card-body">
+        <h6 class="card-title">{{local.nombre}}</h6>
+        <p class="card-text">{{local.direccion}}</p>
+        <p class="card-text">{{local.ciudad}}</p>
+        <a [routerLink]="['/blog', local.id]" class="btn btn-primary">Más Info</a>
+      </div>
+    </div>
+
+  </section>
+</div>

@@ -1,0 +1,14 @@
+<section class="row mt-5 mb-6 mb-2">
+  <div class="card col-3 card pt-3 pl-4 pb-3" *ngFor="let Local of arrLocales">
+    <img class="card-img-top" [src]="local.imagen">
+    <div class="card-body">
+      <h6 class="card-title">{{local.nombre}}</h6>
+      <p class="card-text">{{local.direccion}}</p>
+      <p class="card-text">{{local.ciudad}}</p>
+      <p class="card-text">{{local.distrito}}</p>
+      <p class="card-text">{{cerveza.tipo}}</p>
+
+
+    </div>
+  </div>
+</section>

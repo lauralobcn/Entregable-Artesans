@@ -1,0 +1,49 @@
+<div class="container">
+
+  <section class="row mt-5 ">
+    <div class="col-12 mt-5">
+      <h3 class="text-center display-4">Busca tu cerveceria ideal!</h3>
+      <br>
+      <hr>
+
+    </div>
+    <br>
+    <div class="col-3">
+      <h5>Tipo</h5>
+      <select (change)="recogerTipoCerveza($event)" class="browser-default custom-select">
+        <option value="">Selecciona tipo de cerveza</option>
+        <option value="barril">De Barril</option>
+        <option value="embotellada">Embotellada</option>
+      </select>
+    </div>
+    <div class="col-3">
+      <h5>Nacional/Importada</h5>
+      <select (change)="recogerProcedenciaCerveza($event)" class="browser-default custom-select">
+        <option value="">Selecciona procedencia.</option>
+        <option value="nacional/importada">Nacional/Importada</option>
+        <option value="importada">Importada</option>
+        <option value="nacional">Nacional</option>
+      </select>
+    </div>
+    <div class="col-3">
+      <h5>Ciudad</h5>
+      <select (change)="recogerCiudadCerveza($event)" class="browser-default custom-select">
+        <option value="">Selecciona ciudad</option>
+        <option value="barcelona">Barcelona</option>
+        <option value="madrid">Madrid</option>
+      </select>
+    </div>
+    <div class="col-3">
+      <h5>Distrito</h5>
+      <select (change)="recogerDistritoCerveza($event)" class="browser-default custom-select">
+        <option value="">Selecciona un distrito</option>
+        <option value="sants">Sants</option>
+        <option value="poble Sec">Poble Sec</option>
+        <option value="raval">Raval</option>
+        <option value="ciutatvella">Ciutat Vella</option>
+      </select>
+    </div>
+
+  </section>
+
+</div>
